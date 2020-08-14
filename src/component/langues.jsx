@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     },
     imgcnotainer : {
         width : "110px"
+    },
+    cvSection : {
+        paddingTop : "10px"
     }
 }));
 

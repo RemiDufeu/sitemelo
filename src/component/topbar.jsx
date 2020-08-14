@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         color : '#FFEBED',
         textDecoration : 'none',
         margin : '12px',
-        fontSize : '1.6em'
+        fontSize : '1.3em'
     },
     activeLink : {
         color : theme.palette.primary.light,

@@ -60,7 +60,7 @@ const Xppro = function () {
                 <Typography variant="h6" className={classes.date}>Micro-entreprise 2019 - 2020 <a className={classes.lien} target="blank" href="https://www.lebooketin.com/">www.lebooketin.com</a></Typography>
                     <ul className={classes.listecompetences}>
                         <li className={classes.li}><Typography variant="body1" >Création du site internet</Typography></li>
-                        <li className={classes.li}><Typography variant="body1" >Gestion des réseaux sociaux et analyse statistiqu</Typography></li>
+                        <li className={classes.li}><Typography variant="body1" >Gestion des réseaux sociaux et analyse statistique</Typography></li>
                         <li className={classes.li}><Typography variant="body1" >Gestion des produits et des commandes</Typography></li>
                         <li className={classes.li}><Typography variant="body1" >Création de newsletter et offres promotionnelles</Typography></li>
                         <li className={classes.li}><Typography variant="body1" >Entretien du lien social avec les différents prospects</Typography></li>

@@ -44,7 +44,7 @@ const Benevolat = function () {
 
     return (
         <div className={classes.containerSection}>
-        <Typography color="primary" variant="h4" className={classes.titreSection}>Benevolat<hr className={classes.hrSection}></hr></Typography>
+        <Typography color="primary" variant="h4" className={classes.titreSection}>Bénévolat<hr className={classes.hrSection}></hr></Typography>
         <div className={classes.experiences}>
             <div className={classes.experience}>
                 <Typography color="secondary" variant="h5">Société Kimcap Création</Typography>

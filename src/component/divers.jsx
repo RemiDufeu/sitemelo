@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop : "8px"
     },
     containerinterets : {
-        padding : "5px 35px",
+        padding : "0 35px",
         color : theme.palette.primary.dark,
     },
     linespacing : {
@@ -27,9 +27,9 @@ const Divers = function () {
     <div className={classes.cvSection}>
         <Typography color="primary" variant="h4" className={classes.titreSection}>Centres d'intérêt<hr className={classes.hrSection}></hr></Typography>
         <Grid container className={classes.containerinterets}>
-            <Grid item xs={12} className={classes.linespacing}><Typography variant="h6">Lecture (policier, thriller...)</Typography></Grid>
-            <Grid item xs={12} className={classes.linespacing}><Typography variant="h6">Ecriture de roman</Typography></Grid>
-            <Grid item xs={12} className={classes.linespacing}><Typography variant="h6">Cuisine</Typography></Grid>
+            <Grid item xs={12} className={classes.linespacing}><Typography variant="subtitle1">Lecture (policier, thriller...)</Typography></Grid>
+            <Grid item xs={12} className={classes.linespacing}><Typography variant="subtitle1">Ecriture de roman</Typography></Grid>
+            <Grid item xs={12} className={classes.linespacing}><Typography variant="subtitle1">Cuisine</Typography></Grid>
         </Grid>
     </div>)
 }

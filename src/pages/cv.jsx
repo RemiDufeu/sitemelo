@@ -34,6 +34,11 @@ const useStyles = makeStyles((theme) => ({
         maxWidth : "1000px",
         paddingTop : "50px",
     },
+    particlesfixed : {
+        width: "100%",
+        height : "200px",
+        position : "absolute"
+    }
     
 }));
 
@@ -42,8 +47,9 @@ const Curriculum = function () {
     return (
         <div>    
             <div className ={classes.headerCV}>
+                <div className={classes.particlesfixed}>
                 <Particles
-                    height="264px"
+                    height="200px"
                     params={{
                         particles: {
                             number: {
@@ -87,12 +93,11 @@ const Curriculum = function () {
                         },
                         retina_detect: true
                     }} />
+                    </div>
                 <img className={classes.imagetete} src={photoCv} width="160px" height="auto"/>
             </div>
             
             <Container className={classes.cvBody}>
-                <Competences/>
-                <ParcoursScolaire />
                 <Grid container>
                     <Grid item sx={12} sm={6}>
                         <Informations/>
@@ -101,8 +106,11 @@ const Curriculum = function () {
                         <Langues/>
                         <Divers/>
                     </Grid>
-                    
+                    <Grid item sx={12}>
+                        <Competences/>
+                    </Grid>
                 </Grid>
+                <ParcoursScolaire />
                 <Xppro/>
                 <Benevolat/>
                 
