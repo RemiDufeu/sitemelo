@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import TopBar from './component/topbar'
@@ -28,6 +28,7 @@ const theme = createMuiTheme({
 });
 
 function App() {
+
   return (
     <ThemeProvider theme={theme}>
       <Router>

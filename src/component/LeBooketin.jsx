@@ -7,6 +7,9 @@ import Newsletter from './LeBooketinComponents/newsletter'
 import NiceMatin from './LeBooketinComponents/NiceMatin'
 import SiteInternet from './LeBooketinComponents/SiteInternet'
 
+import InitialFade from "./initialFade"
+import Fade from "./fade"
+
 const useStyles = makeStyles((theme) => ({
     bodyContainer : {
         textAlign : "center"
@@ -18,11 +21,11 @@ const LeBooketin = function () {
     const classes = useStyles()
 
     return (<div className={classes.bodyContainer}>
-        <img src={LeBooketinLogo} width="250px"></img>
+        <InitialFade><img src={LeBooketinLogo} width="250px"></img></InitialFade>
         <SiteInternet/>
         <VisuelsReseaux/>
-        <Newsletter/>
-        <NiceMatin/>
+        <Fade><Newsletter/></Fade>
+        <Fade><NiceMatin/></Fade>
         
     </div>)
 }

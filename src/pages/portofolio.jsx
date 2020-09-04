@@ -9,7 +9,9 @@ import casalogo from "../images/casalogo.svg"
 import LeBooketin from "../component/LeBooketin"
 import LaCasa from "../component/LaCasa"
 
+
 const useStyles = makeStyles((theme) => ({
+
     cvBody : {
         backgroundColor : theme.palette.secondary.light,
         maxWidth : "1000px",
@@ -44,14 +46,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const FakeContenu = <Grid container justify="center" style={{paddingTop : "50px",paddingBottom : "100px",}}><Grid item sm={6}><Typography variant='h6' color="primary">Veuillez selectionner un thème</Typography></Grid></Grid>
+const FakeContenu = <Grid container justify="center" style={{paddingTop : "100px",paddingBottom : "100px",}}></Grid>
 
 
 
 const Portofolio = function () {
     const [currentContent, SetContent] = useState(0)
     const classes = useStyles()
-    
+
+
+
     const PortofolioContent = function() {
         if (currentContent === 1) {
             return(<LeBooketin/>)
@@ -82,7 +86,7 @@ const Portofolio = function () {
                     <Grid item xs={12} sm={12} md={8} lg={8}>
                         <Grid container className={classes.card} alignItems="center" justify="center">
                             <Grid item xs={5} sm={3}><img width="100%" src={logobooketin}></img></Grid>
-                            <Grid item xs={8} sm={5} className={classes.align}><Typography variant="h4">Le Boooketin</Typography></Grid>
+                            <Grid item xs={8} sm={5} className={classes.align}><Typography variant="h4">Le Booketin</Typography></Grid>
                             <Grid item xs={8} sm={4} className={classes.align}><Button color="primary" onClick={Content1} className={classes.typo} disabled={currentContent==1}>{ currentContent==1 ? <><Typography variant="h6" >Ouvert</Typography><ArrowDownwardIcon/></> : <><Typography variant="h6" >Ouvrir</Typography><ArrowForwardIosIcon/></>}</Button></Grid>
                         </Grid>
                         <Grid container className={classes.card} alignItems="center" justify="center">

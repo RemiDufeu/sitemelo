@@ -44,19 +44,10 @@ const Xppro = function () {
 
     return (
     <div className={classes.containerSection}>
-        <Typography color="primary" variant="h4" className={classes.titreSection}>Expériences proffessionnelles<hr className={classes.hrSection}></hr></Typography>
+        <Typography color="primary" variant="h4" className={classes.titreSection}>Expériences professionnelles<hr className={classes.hrSection}></hr></Typography>
         <div className={classes.experiences}>
             <div className={classes.experience}>
-                <Typography color="secondary" variant="h5">Action culturelle de la Communauté d'Agglométation Sophia Antipolis</Typography>
-                <Typography variant="h6" className={classes.date}>Stage Janvier - Mars 2019</Typography>
-                    <ul className={classes.listecompetences}>
-                        <li className={classes.li}><Typography variant="body1" >Etablissement d'un plan de communication pour la promotion du salon du livre jeuness</Typography></li>
-                        <li className={classes.li}><Typography variant="body1" >Création de visuels et de biographies d'auteurs</Typography></li>
-                        <li className={classes.li}><Typography variant="body1" >Gestion des réseaux sociaux</Typography></li>
-                    </ul>
-            </div>
-            <div className={classes.experience}>
-                <Typography color="secondary" variant="h5">Le Booketin - achats reventes de livres d'occasion en ligne</Typography>
+                <Typography color="secondary" variant="h5">Le Booketin - bouquinerie en ligne</Typography>
                 <Typography variant="h6" className={classes.date}>Micro-entreprise 2019 - 2020 <a className={classes.lien} target="blank" href="https://www.lebooketin.com/">www.lebooketin.com</a></Typography>
                     <ul className={classes.listecompetences}>
                         <li className={classes.li}><Typography variant="body1" >Création du site internet</Typography></li>
@@ -64,6 +55,15 @@ const Xppro = function () {
                         <li className={classes.li}><Typography variant="body1" >Gestion des produits et des commandes</Typography></li>
                         <li className={classes.li}><Typography variant="body1" >Création de newsletter et offres promotionnelles</Typography></li>
                         <li className={classes.li}><Typography variant="body1" >Entretien du lien social avec les différents prospects</Typography></li>
+                    </ul>
+            </div>
+            <div className={classes.experience}>
+                <Typography color="secondary" variant="h5">Action culturelle de la Communauté d'Agglométation Sophia Antipolis</Typography>
+                <Typography variant="h6" className={classes.date}>Stage Janvier - Mars 2019</Typography>
+                    <ul className={classes.listecompetences}>
+                        <li className={classes.li}><Typography variant="body1" >Etablissement d'un plan de communication pour la promotion du salon du livre jeunesse</Typography></li>
+                        <li className={classes.li}><Typography variant="body1" >Création de visuels et de biographies d'auteurs</Typography></li>
+                        <li className={classes.li}><Typography variant="body1" >Gestion des réseaux sociaux</Typography></li>
                     </ul>
             </div>
             <div className={classes.experience}>

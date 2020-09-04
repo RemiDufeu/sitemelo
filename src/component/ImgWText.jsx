@@ -4,16 +4,17 @@ import { Grid, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     containerDiapo : {
-        paddingBottom : "15px",
-        paddingTop : "15px"
+        padding : "25px 0",
+        
     },
     textDiapo : {
         width : '48%',
         display: 'flex',
         justifyContent : 'center',
         flexDirection : 'column',
-        color  : theme.palette.primary.light,
-        padding : "15px"
+        color  : theme.palette.primary.dark,
+        padding : "15px",
+        marginBottom : "30px"
     },
   }));
 
@@ -22,7 +23,7 @@ const ImageWText = function ({ Text, Img, children }) {
     const classes = useStyles();
     return (<Grid container justify="space-evenly" className={classes.containerDiapo}>
                 <Grid item xs={12} sm={6} className={classes.textDiapo}  >
-                    <Typography variant="h4" >
+                    <Typography variant="subtitle1" >
                         {Text}
                     </Typography>
                     {children}

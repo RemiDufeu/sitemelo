@@ -1,21 +1,15 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
 
 import ImgWText from '../ImgWText'
 import imgStaff from '../../images/lacasa/staffcasa.jpg'
 
-const useStyles = makeStyles((theme) => ({
-    test : {
-
-    }
-}));
+import InitialFade from '../initialFade'
 
 const Presentation = function () {
-    const classes = useStyles()
-
-    return (<>
-            <ImgWText Text="blabla bla pendant mon stage blabla bla bla" Img={imgStaff}></ImgWText>
-    </>)
+    
+    return (<InitialFade>
+            <ImgWText Text="La communauté d'agglomération Sophia Antipolis regroupe de nombreuses communes (Antibes, Vallauris, Biot, Villeneuve-Loubet, Valbonne...). La CASA a pour mission de promouvoir la culture au sein de son agglomération. Elle organise donc de nombreux évènements et notamment le salon du livre jeunesse." Img={imgStaff}></ImgWText>
+    </InitialFade>)
 }
 
-export default Presentation;
+export default Presentation; 

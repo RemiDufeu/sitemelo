@@ -28,7 +28,7 @@ const Footer = function () {
     return (<div className={classes.containerfooter}>
         <div className={classes.contenu}>
             <div className={classes.span}>Site web par Rémi Dufeu</div>
-            <div className={classes.span} >Mise à jour le 01/08/2020</div>
+            <div className={classes.span} >Mise à jour le 31/08/2020</div>
             <div className={classes.span} > Icônes par <a className={classes.lien} target="_blank" href="https://icones8.fr">Icons8</a></div>
         </div>
     </div>)

@@ -93,7 +93,7 @@ const Contact = function () {
         <div className ={ classes.contact}>
                 <Typography color="primary" variant="h2">Méloée Delannoy</Typography>
 				<Typography variant="h5">Mail : <a className={classes.lien} href="mailto:meloee974@yahoo.fr">meloee974@yahoo.fr</a></Typography>
-				<Typography variant="h5">Telephone : <a className={classes.lien} href="tel:+33689265208">06 89 26 52 08</a></Typography>
+				<Typography variant="h5">Téléphone : <a className={classes.lien} href="tel:+33689265208">06 89 26 52 08</a></Typography>
 				<Typography variant="h5">Linkedin : <a className={classes.lien} target="blank" href="https://www.linkedin.com/in/m%C3%A9lo%C3%A9e-delannoy-b83535171/">@meloeedelannoy</a></Typography>
         </div>
 		<div className ={ classes.fakediv}>

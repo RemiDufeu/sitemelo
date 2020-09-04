@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent : 'space-around',
         flexDirection : 'column',
-        paddingBottom : "20px"
+        paddingBottom : "20px",
+        marginBottom : "25px"
     },
     Twitter : {
         border : "5px solid #00acee",
@@ -38,12 +39,13 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const ImageWText = function ({ Text }) {
-    
+
     const classes = useStyles();
-    return (<Grid container className={classes.containerDiapo} justify="space-around" alignItems="center">
+    return (<div  >
+            <Grid container className={classes.containerDiapo} justify="space-around" alignItems="center">
                 
                 <Grid item xs={12} sm={12} className={classes.textDiapo} >
-                    <Typography variant="h3" color="primary" >
+                    <Typography variant="h4" color="primary" >
                         {Text}
                     </Typography>
                 </Grid>
@@ -53,7 +55,8 @@ const ImageWText = function ({ Text }) {
                     <Grid item xs={2}><a href="https://www.facebook.com/lebooketin/" target="blank"><img className="mouseoverRS" width ="100%" src={Facebook} style={{borderRadius : "10px"}}></img></a></Grid>
                 </Grid>
         
-            </Grid>)
+            </Grid>
+            </div>)
 }
 
 export default ImageWText;

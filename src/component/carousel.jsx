@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     },
    carousel : {
      position : "relative",
-     overflow : "hidden"
+     overflow : "hidden",
+     padding : "25px 0"
    },
    carouItem : {
      float : "left",
@@ -31,13 +32,13 @@ const useStyles = makeStyles((theme) => ({
      position : "absolute",
      color : theme.palette.secondary.main,
      top : "calc(50% - 30px)",
-     left : "3%"
+     left : "3%",
    },
    nextbtn : {
     position : "absolute",
     color : theme.palette.secondary.main,
     top : "calc(50% - 30px)",
-    right : "3%"
+    right : "3%",
   },
     }));
 
@@ -138,8 +139,8 @@ const CarouselComponent = function ({ imgs, nbImgVisible = 3, nbImgScroll= 3 }) 
           <div className={classes.panorama} style={{ width : (ratio * 100)+ "%", transform : `translate(${-indexCarou * (100/imgs.length)}%, 0` }}>
             {listeItemes}
           </div>
-          <div className={classes.prevbtn} onClick={prev}><ChevronLeftIcon style={{ fontSize: 60 }}/></div>
-    <div className={classes.nextbtn} onClick={next}><ChevronRightIcon style={{ fontSize: 60 }}/></div>
+          <div className={classes.prevbtn} onClick={prev}><ChevronLeftIcon style={{ fontSize: 60, cursor : "pointer" }}/></div>
+    <div className={classes.nextbtn} onClick={next}><ChevronRightIcon style={{ fontSize: 60, cursor : "pointer" }}/></div>
       </div>
     )
 }

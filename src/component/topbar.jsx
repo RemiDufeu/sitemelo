@@ -42,7 +42,7 @@ const TopBar = function() {
         <div className={classes.BarContainer}>
                 <div className={classes.ListContainer}>
                     <NavLink className={classes.link} to="/" exact activeClassName={classes.activeLink}>Curriculum</NavLink>
-                    <NavLink className={classes.link} to="/Portofolio" activeClassName={classes.activeLink}>Portofolio</NavLink>
+                    <NavLink className={classes.link} to="/Portofolio" activeClassName={classes.activeLink}>Portfolio</NavLink>
                     <NavLink className={classes.link} to="/Contact"  activeClassName={classes.activeLink}>Contact</NavLink>
                 </div>
         </div>
